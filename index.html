@@ -388,6 +388,21 @@
   .stat-link:hover strong{text-decoration:underline;}
   .stat-link:focus-visible{outline:2px solid #8fb8ff;outline-offset:4px;border-radius:6px;}
 
+  /* ===================== 이용 안내 ===================== */
+  .notice{padding:8px 0 0;}
+  .notice-card{
+    position:relative;background:var(--ink-900);color:#e7ecf6;
+    border-radius:var(--radius-m);padding:34px 28px 30px;overflow:hidden;
+  }
+  .notice-card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:8px;
+    background:repeating-linear-gradient(135deg,var(--amber-500) 0 14px,var(--ink-900) 14px 28px);
+  }
+  .notice-card h2{color:#fff;font-size:clamp(19px,2.4vw,24px);font-weight:800;margin:10px 0 16px;}
+  .notice-card p{margin:0 0 12px;line-height:1.75;color:#c7cfe0;font-size:15px;}
+  .notice-card p:last-child{margin-bottom:0;}
+  .notice-card strong{color:var(--amber-500);font-weight:800;}
+
   /* ===================== 수리 프로세스 ===================== */
   .process-grid{
     display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:36px;
@@ -536,6 +551,7 @@
         <div class="nav-submenu">
           <a href="#services">주요 서비스</a>
           <a href="#process">수리 과정</a>
+          <a href="#notice">이용 안내</a>
           <a href="#contact">오시는 길</a>
         </div>
       </div>
@@ -794,6 +810,21 @@
         <div class="process-step"><div class="process-num">3</div><h3>수리 진행</h3><p>숙련된 기술로 정확히 수리</p></div>
         <div class="process-step"><div class="process-num">4</div><h3>완료 및 점검</h3><p>작동 테스트 및 품질 검검</p></div>
         <div class="process-step"><div class="process-num">5</div><h3>A/S 보장</h3><p>수리 후 안심 케어</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 이용 안내 (당부의 말씀) ===================== -->
+  <section class="notice" id="notice">
+    <div class="wrap">
+      <div class="notice-card">
+        <h2>일반 고객님들께 드리는 당부의 말씀</h2>
+        <p>유튜브 영상이나 차량 지식이 있으신 분들이 "이 정도는 쉽게 할 수 있겠다"고 생각하시는 작업도,
+        막상 실제 차량 앞에서는 영상과 전혀 다른 상황이 펼쳐지는 경우가 많습니다.</p>
+        <p>일반 공구가 아닌 <strong>해당 차종 전용 공구</strong>가 반드시 필요한 작업도 있으며,
+        무리하게 진행하시면 오히려 미러 손상이나 안전 문제로 이어질 수 있습니다.</p>
+        <p><strong>사이드미러 고장수리는 전문가에게 맡기시는 것을 권장드립니다.</strong>
+        정확한 진단과 안전한 정비, 그 결과에 대한 책임까지 아이모터카가 함께하겠습니다.</p>
       </div>
     </div>
   </section>
